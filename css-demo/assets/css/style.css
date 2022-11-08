@@ -72,7 +72,20 @@ html {
 *:after {
     box-sizing: inherit;
 }
+/* ---------------Utility Classes----------------- */
 
+.container{
+    margin: auto;
+    padding:45px;
+}
+.img-right{
+    float: right;
+    border:2px solid #03A886;
+    padding: 6px;
+    border-radius: 12px;
+    max-width: 50%;
+    margin:15px 0 15px 15px;
+}
 body {
     background-color: #7FF52A;
     color: white;
@@ -96,7 +109,16 @@ header.primary{
     background-size: cover;
     background-position: center;
     height: 300px;
+    display:flex;
 }
+header.primary .hgroup{
+width: 70%;
+}
+
+header.primary nav{
+    width:30%;
+}
+
 .hgroup h1 a{
     color: #11F5C6;
     font-size: 2.8rem;
@@ -106,4 +128,35 @@ header.primary{
 .hgroup h2{
     color: burlywood;
     font-size: 2.0rem;
+}
+
+header.primary nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+header.primary nav ul li a{
+    display: block;
+    background-color: #5CA825;
+    color: aliceblue;
+    padding: 10px 10px 10px 0;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    transition: .90;
+    margin-bottom: 30px;
+}
+header.primary nav ul li a:hover{
+    text-decoration: underline;
+   
+}
+#content{
+    line-height: 1.6;
+}
+
+#content h2, #content h3{
+    color: #11F5C6;
 }
