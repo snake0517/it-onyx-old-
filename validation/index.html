@@ -9,6 +9,9 @@
     <meta name="description" content="Keyword Rich Description">
     <meta name="author" content="Breland Norwood">
     <link href="assets/css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
 </head>
 
 <body>
@@ -35,7 +38,8 @@
         <label class="formlabel" for="Height">Height:</label>
         <input type="text" id="Height" name="Height" size="3" maxlength="3"> <br>
         <label class="formlabel" for="Weight">Weight:</label>
-        <input type="text" id="Weight" name="Weight" size="3" maxlength="3"> <br> <hr>
+        <input type="text" id="Weight" name="Weight" size="3" maxlength="3"> <br>
+        <hr>
         <label class="formlabel" for="PhoneNumber">Phone Number:</label>
         <input type="text" id="PhoneNumber" name="PhoneNumber" size="14" maxlength="14"> <br>
         <label class="formlabel">Marital Status: </label>
@@ -49,7 +53,7 @@
         <label class="formlabel" for="Address">Address:</label>
         <input type="text" id="Address" name="Address" size="30" maxlength="30"> <br>
         <label class="formlabel" for="City">City:</label>
-        <input type="text" id="City" name="City" size="30" maxlength="30"> 
+        <input type="text" id="City" name="City" size="30" maxlength="30">
         <label class="formlabel">State: </label>
         <select id="State" name="State">
             <option value="AL">Alabama</option>
@@ -103,9 +107,10 @@
             <option value="WV">West Virginia</option>
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
-        </select> 
+        </select>
         <label class="formlabel" for="Zip">Zip:</label>
-        <input type="text" id="Zip" name="Zip" size="5" maxlength="5"> <br> <hr>
+        <input type="text" id="Zip" name="Zip" size="5" maxlength="5"> <br>
+        <hr>
         <label class="formlabel">Taking Medication: </label>
         <label for="Yes"><input type="radio" name="Medications" id="Yes" value="Y">Yes</label>
         <label for="No"><input type="radio" name="Medications" id="No" value="N">No</label> <br>
@@ -113,9 +118,15 @@
 
         <textarea id="MedicationsList" name="MedicationsList" rows="3" cols="30">
 
-        </textarea> <br> <hr>
+        </textarea> <br>
+        <hr>
         <input type="submit" value="Submit Patient Form" Name="SubmitPatientForm">
     </form>
+    <script>
+        $( "#validation" ).validate({
+        
+        });
+        </script>
 </body>
 
 </html>
