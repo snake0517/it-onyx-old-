@@ -3,48 +3,77 @@
 
         });
         
-        function displayHypotenuse() {
+        function displayCircle() {
             // if the form is valid, then make the calculations
             if ($("#CircleForm").valid()) {
                 
-                 document.getElementById("hypotenuse").innerHTML = "";
+                 document.getElementById("diameter").innerHTML = "";
 
-                 var leg1; // string representation of the leg1
-                 var leg1fp; // floating point value of leg1
-                 var leg2; // string representation of the leg1
-                 var leg2fp; // floating point value of leg1
-                 var hypotenuse;  // floating point hypotenuse
+                 document.getElementById("circumference").innerHTML = "";
+                 document.getElementById("area").innerHTML = "";
+
+                 var radius; // string representation of the leg1
+                 var radiusfp; // floating point value of leg1
+                 var circumference; // floating point value of circimfrence
+                 var area; // floating point value area
+                 var diameter;  // floating point diameter
                  var result; // displayable result
 
                  // read in the legs as a string
-                 leg1 = document.getElementById("leg1").value;
-                 leg2 = document.getElementById("leg2").value;
+                 radius = document.getElementById("radius").value;
+                 
 
                  // Convert numbers from strings to Floating Point
-                 leg1fp = parseFloat( leg1 ); 
-                 leg2fp = parseFloat( leg2 ); 
+                 radiusfp = parseFloat( radius ); 
+                  
 
-                 // calculate the hypotenuse
-                 hypotenuse = calcHypotenuse(leg1fp, leg2fp);
+                 // calculate the diameter
+                 diameter = calcDiameter(radiusfp);
 
-                 // display the hypotenuse
-                 document.getElementById("hypotenuse").innerHTML = hypotenuse.toString();
+                 // calculate the circumference
+                 circumference = calcCircumference(radiusfp);
+
+                 // calculate the circumference
+                 area = calcArea(radiusfp);
+
+                 // display the diameter
+                 document.getElementById("diameter").innerHTML = diameter.toString();
+
+                 // display the circumference
+                 document.getElementById("circumference").innerHTML = circumference.toString();
+
+                 // display the area
+                 document.getElementById("area").innerHTML = area.toString();
             }
         }
 
-          function calcHypotenuse (leg1value, leg2value)
-          // returns hypotenuse of a right triangle
-          // square root of leg1 squared plus leg2 squared
+          function calcDiameter (r)
+          // returns diameter
+          // two times the radius
           {
-              return Math.sqrt((leg1value*leg1value) + (leg2value*leg2value));
+              return 2 * r;
           }
           
+          function calcCircumference (r)
+          // returns circumference
+          // two times pi times radius
+          {
+              return 2 * Math.PI * r;
+          }
+
+          function calcArea (r)
+          // returns circumference
+          // two times pi times radius
+          {
+              return  Math.PI * r * r;
+          }
+
           function clearForm()
         {
-            document.getElementById("leg1").value = "";
-            document.getElementById("leg1error").innerHTML = "";
-            document.getElementById("leg2").value = "";
-            document.getElementById("leg2error").innerHTML = "";
-            document.getElementById("hypotenuse").innerHTML = "";
+            document.getElementById("radius").value = "";
+            document.getElementById("radiuserror").innerHTML = "";
+            document.getElementById("area").innerHTML = "";
+            document.getElementById("circumference").innerHTML = "";
+            document.getElementById("diameter").innerHTML = "";
         }
  
