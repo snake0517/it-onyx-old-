@@ -12,14 +12,14 @@
                  document.getElementById("circumference").innerHTML = "";
                  document.getElementById("area").innerHTML = "";
 
-                 var radius; // string representation of the leg1
-                 var radiusfp; // floating point value of leg1
+                 var radius; // string representation of the radius
+                 var radiusfp; // floating point value of radius
                  var circumference; // floating point value of circimfrence
                  var area; // floating point value area
                  var diameter;  // floating point diameter
                  var result; // displayable result
 
-                 // read in the legs as a string
+                 // read in the radius as a string
                  radius = document.getElementById("radius").value;
                  
 
