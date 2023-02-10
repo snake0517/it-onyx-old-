@@ -13,49 +13,49 @@ function calculate() {
         // Operator
         // Get the value associated with the operator that was checked (+, -, *, or /)
         var fromoperator;
-        if (document.getElementById("CenOperator").checked) {
-            fromoperator = document.getElementById("CenOperator").value;
+        if (document.getElementById("FromCenOperator").checked) {
+            fromoperator = document.getElementById("FromCenOperator").value;
         }
-        if (document.getElementById("MetOperator").checked) {
-            fromoperator = document.getElementById("MetOperator").value;
+        if (document.getElementById("FromMetOperator").checked) {
+            fromoperator = document.getElementById("FromMetOperator").value;
         }
-        if (document.getElementById("KiloOperator").checked) {
-            fromoperator = document.getElementById("KiloOperator").value;
+        if (document.getElementById("FromKiloOperator").checked) {
+            fromoperator = document.getElementById("FromKiloOperator").value;
         }
-        if (document.getElementById("IncOperator").checked) {
-            fromoperator = document.getElementById("IncOperator").value;
+        if (document.getElementById("FromIncOperator").checked) {
+            fromoperator = document.getElementById("FromIncOperator").value;
         }
-        if (document.getElementById("FeetOperator").checked) {
-            fromoperator = document.getElementById("FeetOperator").value;
+        if (document.getElementById("FromFeetOperator").checked) {
+            fromoperator = document.getElementById("FromFeetOperator").value;
         }
-        if (document.getElementById("YardsOperator").checked) {
-            fromoperator = document.getElementById("YardsOperator").value;
+        if (document.getElementById("FromYardsOperator").checked) {
+            fromoperator = document.getElementById("FromYardsOperator").value;
         }
-        if (document.getElementById("MilesOperator").checked) {
-            fromoperator = document.getElementById("MilesOperator").value;
+        if (document.getElementById("FromMilesOperator").checked) {
+            fromoperator = document.getElementById("FromMilesOperator").value;
         }
         
         var tooperator;
-        if (document.getElementById("CenOperator").checked) {
-            tooperator = document.getElementById("CenOperator").value;
+        if (document.getElementById("ToCenOperator").checked) {
+            tooperator = document.getElementById("ToCenOperator").value;
         }
-        if (document.getElementById("MetOperator").checked) {
-            tooperator = document.getElementById("MetOperator").value;
+        if (document.getElementById("ToMetOperator").checked) {
+            tooperator = document.getElementById("ToMetOperator").value;
         }
-        if (document.getElementById("KiloOperator").checked) {
-            tooperator = document.getElementById("KiloOperator").value;
+        if (document.getElementById("ToKiloOperator").checked) {
+            tooperator = document.getElementById("ToKiloOperator").value;
         }
-        if (document.getElementById("IncOperator").checked) {
-            tooperator = document.getElementById("IncOperator").value;
+        if (document.getElementById("ToIncOperator").checked) {
+            tooperator = document.getElementById("ToIncOperator").value;
         }
-        if (document.getElementById("FeetOperator").checked) {
-            tooperator = document.getElementById("FeetOperator").value;
+        if (document.getElementById("ToFeetOperator").checked) {
+            tooperator = document.getElementById("ToFeetOperator").value;
         }
-        if (document.getElementById("YardsOperator").checked) {
-            tooperator = document.getElementById("YardsOperator").value;
+        if (document.getElementById("ToYardsOperator").checked) {
+            tooperator = document.getElementById("ToYardsOperator").value;
         }
-        if (document.getElementById("MilesOperator").checked) {
-            tooperator = document.getElementById("MilesOperator").value;
+        if (document.getElementById("ToMilesOperator").checked) {
+            tooperator = document.getElementById("ToMilesOperator").value;
         }
         
         CalculateResult(fromvalue, fromoperator, tooperator);
