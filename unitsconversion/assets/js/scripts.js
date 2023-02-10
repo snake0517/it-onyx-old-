@@ -11,7 +11,7 @@ function calculate() {
         var fromvalue = document.getElementById("FromValue").value;
 
         // Operator
-        // Get the value associated with the operator that was checked (+, -, *, or /)
+        // Get the value associated with the operator that was checked
         var fromoperator;
         if (document.getElementById("FromCenOperator").checked) {
             fromoperator = document.getElementById("FromCenOperator").value;
@@ -68,7 +68,7 @@ async function CalculateResult(fromvalue, fromoperator, tooperator) {
         var myURL = "https://brucebauer.info/assets/ITEC3650/unitsconversion.php";
 
         /* AJAX calculator requires Operand1, Operator, and Operand2 */
-        myURL = myURL + "?FromValue=" + encodeURIComponent(fromvalue) + "&FromOperator=" + encodeURIComponent(fromoperator) + "&ToOperator=" + encodeURIComponent(tooperator);
+        myURL = myURL + "?FromValue=" + encodeURIComponent(fromvalue) + "&FromUnit=" + encodeURIComponent(fromoperator) + "&ToUnit=" + encodeURIComponent(tooperator);
 
         /* fetch the results */
         let myCalcObject = await fetch(myURL);
