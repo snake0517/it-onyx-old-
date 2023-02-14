@@ -83,6 +83,8 @@ function clearform() {
     /* Set all of the form values to blank or false */
     document.getElementById("FromValue").value = "";
     document.getElementById("FromValueMsg").innerHTML = "";
+    document.getElementById("FromOperatorMsg").innerHTML = "";
+    document.getElementById("ToOperatorMsg").innerHTML = "";
     document.getElementById("FromCenOperator").checked = false;
     document.getElementById("FromMetOperator").checked = false;
     document.getElementById("FromKiloOperator").checked = false;
